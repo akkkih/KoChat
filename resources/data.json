@@ -1,4 +1,10 @@
 {
+<<<<<<< HEAD
   "latestVersion": 1.0,
   "downloadURL": "TBD"
 }
+=======
+  "latestVersion": 1,
+  "downloadURL": "TBD"
+}
+>>>>>>> 0e9535814b75fe7a12b84f85575b46ac5d375761
