@@ -5,15 +5,21 @@ import me.akkih.kochat.main
 import org.bukkit.configuration.file.YamlConfiguration
 import java.io.File
 
-private lateinit var yamlConfiguration: YamlConfiguration
-
-// TODO: Need rework, not working
 object ConfigManager {
-
+    private lateinit var yamlConfiguration: YamlConfiguration
+    private lateinit var path: String
+    private lateinit var file: File
     init {
-        val path = "messages${File.separator}${main.config.getString("language")}.yml"
-        val file = File(main.dataFolder, path)
+        loadMessages()
+    }
 
+    fun getMessage(path: ConfigMessage): String {
+        return yamlConfiguration.getString(path.name.lowercase()) ?: return "null"
+    }
+
+    private fun loadMessages(){
+        path = "messages${File.separator}${main.config.getString("language")}.yml"
+        file = File(main.dataFolder, path)
         if (file.exists()) {
             yamlConfiguration = YamlConfiguration.loadConfiguration(file)
         } else {
@@ -21,8 +27,10 @@ object ConfigManager {
         }
     }
 
-    fun getMessage(path: ConfigMessage): String {
-        return yamlConfiguration.getString(path.name.lowercase()) ?: return "null"
+    fun reloadAll(){
+        main.reloadConfig()
+        loadMessages()
     }
+
 
 }
