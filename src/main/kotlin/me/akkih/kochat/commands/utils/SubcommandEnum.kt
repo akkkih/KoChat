@@ -8,5 +8,6 @@ enum class SubcommandEnum(
 
     HELP("Help", "/kochat help", "kochat.commands.help"),
     RELOAD("Reload", "/kochat reload", "kochat.commands.reload"),
+    LANGUAGE("Language", "/kochat language <lang>", "kochat.commands.language"),
 
 }

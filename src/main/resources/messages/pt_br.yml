@@ -1,2 +1,5 @@
 no_permission_message: "&cVocê não pode fazer isso!"
+invalid_usage: "&cUso inválido! Use %usage%."
 successful_reload: "&aPlugin recarregado com sucesso!"
+language_not_found: "&cEsse idioma não foi encontrado!"
+language_changed_successfully: "&aIdioma alterado com sucesso!"

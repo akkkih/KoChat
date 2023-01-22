@@ -3,6 +3,7 @@ package me.akkih.kochat.commands.utils
 import me.akkih.kochat.config.ConfigManager
 import me.akkih.kochat.config.enums.ConfigMessage
 import me.akkih.kochat.utils.ChatUtil
+import net.kyori.adventure.text.Component
 import org.bukkit.Bukkit
 import org.bukkit.command.CommandMap
 import org.bukkit.command.CommandSender
@@ -19,7 +20,7 @@ abstract class CommandManager(
         this.aliases = listOf(*aliases)
         this.description = description
         this.permission = permission
-        this.permissionMessage = ChatUtil.format(ConfigManager.getMessage(ConfigMessage.NO_PERMISSION_MESSAGE))
+        this.permissionMessage(Component.text(ChatUtil.format(ConfigManager.getMessage(ConfigMessage.NO_PERMISSION_MESSAGE))))
 
         try {
             val field = Bukkit.getServer().javaClass.getDeclaredField("commandMap")

@@ -62,8 +62,3 @@ compileTestKotlin {
         jvmTarget = "17"
     }
 }
-
-task copyJarToPluginFolder(type: Copy) {
-    from 'build/libs/KoChat-${version}-all.jar'
-    into 'C:\\Server\\plugins'
-}

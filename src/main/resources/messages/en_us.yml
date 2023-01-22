@@ -1,2 +1,5 @@
 no_permission_message: "&cYou can't do that!"
+invalid_usage: "&cInvalid usage! Use %usage%."
 successful_reload: "&aSuccessfully reloaded plugin!"
+language_not_found: "&cThis language was not found!"
+language_changed_successfully: "&aSuccessfully changed language!"
