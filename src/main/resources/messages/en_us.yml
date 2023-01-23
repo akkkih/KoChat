@@ -1,5 +1,14 @@
 no_permission_message: "&cYou can't do that!"
 invalid_usage: "&cInvalid usage! Use %usage%."
+join_message: "&e%player% just joined the game!"
+quit_message: "&e%player% just left the game..."
 successful_reload: "&aSuccessfully reloaded plugin!"
+
 language_not_found: "&cThis language was not found!"
 language_changed_successfully: "&aSuccessfully changed language!"
+
+added_word: "&aThe word %word% was successfully added to the swearing list!"
+removed_word: "&aThe word %word% was successfully removed from the swearing list!"
+word_already_added: "&cThis word already exists in the swearing list!"
+word_not_found: "&cThe word %word% was not found in the swearing list!"
+no_words: "&cNo words were found!"

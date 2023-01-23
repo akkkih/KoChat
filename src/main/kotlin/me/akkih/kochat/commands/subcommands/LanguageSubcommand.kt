@@ -4,7 +4,7 @@ import me.akkih.kochat.commands.utils.SubcommandEnum
 import me.akkih.kochat.commands.utils.SubcommandManager
 import me.akkih.kochat.config.ConfigManager
 import me.akkih.kochat.config.enums.ConfigMessage
-import me.akkih.kochat.config.enums.Language
+import me.akkih.kochat.commands.enums.Language
 import me.akkih.kochat.main
 import me.akkih.kochat.utils.ChatUtil
 import org.bukkit.command.CommandSender

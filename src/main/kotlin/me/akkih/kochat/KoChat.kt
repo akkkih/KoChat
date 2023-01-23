@@ -4,6 +4,8 @@ import com.fasterxml.jackson.core.JsonProcessingException
 import com.fasterxml.jackson.databind.JsonNode
 import com.fasterxml.jackson.databind.ObjectMapper
 import me.akkih.kochat.commands.BaseCommand
+import me.akkih.kochat.listeners.MessageListener
+import me.akkih.kochat.listeners.PlayerListener
 import me.akkih.kochat.utils.JsonUtil
 import org.bukkit.Bukkit
 import org.bukkit.plugin.java.JavaPlugin
@@ -15,16 +17,24 @@ lateinit var main: KoChat
 class KoChat : JavaPlugin() {
 
     override fun onEnable() {
+        logger.info("Starting KoChat...")
+
         main = this
 
+        createResources()
+        BaseCommand()
+        checkIsPluginUpdated()
+        registerListeners()
+
+        logger.info("KoChat started successfully!")
+    }
+
+    private fun createResources() {
         if (!dataFolder.exists()) dataFolder.mkdir()
         saveDefaultConfig()
 
         saveResource("messages${File.separator}en_us.yml", false)
         saveResource("messages${File.separator}pt_br.yml", false)
-
-        BaseCommand()
-        checkIsPluginUpdated()
     }
 
     private fun checkIsPluginUpdated() {
@@ -38,10 +48,19 @@ class KoChat : JavaPlugin() {
             }
 
             if (root.get("latestVersion").toString() != description.version) {
-                logger.warning("You are running an outdated version of KoChat, please update to the latest version!")
+                logger.severe("You are running an outdated version of KoChat, please update to the latest version!")
                 isPluginUpdated = false
             }
         })
+    }
+
+    private fun registerListeners() {
+        logger.info("Registering listeners...")
+        val manager = Bukkit.getPluginManager()
+
+        manager.registerEvents(MessageListener(), this)
+        manager.registerEvents(PlayerListener(), this)
+        logger.info("Listeners registered successfully!")
     }
 
 }

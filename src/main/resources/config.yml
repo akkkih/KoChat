@@ -1,1 +1,5 @@
-language: "en_us"
+language: en_us
+message_format: "&6%player% &8» &f%message%"
+
+swears:
+  - fuck

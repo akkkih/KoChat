@@ -1,11 +1,13 @@
 package me.akkih.kochat.commands
 
+import me.akkih.kochat.commands.subcommands.WordSubcommand
 import me.akkih.kochat.commands.subcommands.HelpSubcommand
 import me.akkih.kochat.commands.subcommands.LanguageSubcommand
 import me.akkih.kochat.commands.subcommands.ReloadSubcommand
 import me.akkih.kochat.commands.utils.CommandManager
 import me.akkih.kochat.commands.utils.SubcommandEnum
-import me.akkih.kochat.config.enums.Language
+import me.akkih.kochat.commands.enums.Language
+import me.akkih.kochat.main
 import org.bukkit.command.CommandSender
 import org.bukkit.util.StringUtil
 import java.util.Arrays
@@ -20,6 +22,7 @@ class BaseCommand : CommandManager(
     private val helpSubcommand = HelpSubcommand()
     private val reloadSubcommand = ReloadSubcommand()
     private val languageSubcommand = LanguageSubcommand()
+    private val wordSubcommand = WordSubcommand()
 
     override fun execute(sender: CommandSender, args: Array<String>) {
         if (args.isEmpty()) {
@@ -29,6 +32,7 @@ class BaseCommand : CommandManager(
                 "help" -> helpSubcommand.execute(sender, args, SubcommandEnum.HELP)
                 "reload" -> reloadSubcommand.execute(sender, args, SubcommandEnum.RELOAD)
                 "language" -> languageSubcommand.execute(sender, args, SubcommandEnum.LANGUAGE)
+                "words" -> wordSubcommand.execute(sender, args, SubcommandEnum.WORDS)
                 else -> helpSubcommand.execute(sender, args, SubcommandEnum.HELP)
             }
         }
@@ -42,6 +46,14 @@ class BaseCommand : CommandManager(
         if (args.size == 2) {
             return when (args[0].lowercase()) {
                 "language" -> StringUtil.copyPartialMatches(args[1], Arrays.stream(Language.values()).map { it.name.lowercase() }.toList(), ArrayList())
+                "words" -> StringUtil.copyPartialMatches(args[1], listOf("add", "remove", "list"), ArrayList())
+                else -> mutableListOf()
+            }
+        }
+
+        if (args.size == 3) {
+            return when (args[1].lowercase()) {
+                "remove" -> StringUtil.copyPartialMatches(args[2], main.config.getStringList("swears"), ArrayList())
                 else -> mutableListOf()
             }
         }

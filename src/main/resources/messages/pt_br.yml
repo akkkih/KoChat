@@ -1,5 +1,14 @@
 no_permission_message: "&cVocê não pode fazer isso!"
 invalid_usage: "&cUso inválido! Use %usage%."
+join_message: "&e%player% acabou de entrar no jogo!"
+quit_message: "&e%player% acabou de sair do jogo..."
 successful_reload: "&aPlugin recarregado com sucesso!"
+
 language_not_found: "&cEsse idioma não foi encontrado!"
 language_changed_successfully: "&aIdioma alterado com sucesso!"
+
+added_word: "&aA palavra %word% foi adicionada com sucesso à lista de palavrões!"
+removed_word: "&aA palavra %word% foi removida com sucesso da lista de palavrões!"
+word_already_added: "&cEssa palavra já está na lista de palavrões!"
+word_not_found: "&cA palavrva %word% não foi encontrada na lista de palavrões!"
+no_words: "&cNenhuma palavra encontrada!"
