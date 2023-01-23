@@ -9,6 +9,13 @@
 - Quick and easy to install: just drag and drop the JAR into the plugins folder!
 - Supports color code messages: use `&` to use colors
 
+## Permissions
+- `kochat.primarycommand`: Permission to execute /kochat
+- `kochat.commands.help`: Permission to execute /kochat help
+- `kochat.commands.reload`: Permission to execute /kochat reload
+- `kochat.commands.language`: Permission to execute /kochat language
+- `kochat.commands.words`: Permission to execute /kochat words
+
 ## Translations
 If you would like to help me translate the plugin, join our [Crowdin](https://crowdin.com/project/koplugins)!
 
