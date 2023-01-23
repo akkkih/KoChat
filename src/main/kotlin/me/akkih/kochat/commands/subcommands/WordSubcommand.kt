@@ -11,7 +11,7 @@ import org.bukkit.command.CommandSender
 class WordSubcommand : SubcommandManager() {
 
     override fun execute(sender: CommandSender, args: Array<String>) {
-        if (args.size > 3) {
+        if (args.size != 3 && args[1].lowercase() != "list") {
             sender.sendMessage(ChatUtil.format(ConfigManager.getMessage(ConfigMessage.INVALID_USAGE)
                 .replace("%usage%", SubcommandEnum.WORDS.commandUsage)))
             return
