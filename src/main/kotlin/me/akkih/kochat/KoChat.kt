@@ -18,6 +18,12 @@ internal var isPluginUpdated = true
 lateinit var main: KoChat
 
 fun CommandSender.sendConfigMessage(msg: ConfigMessage) = sendMessage(ChatUtil.format(msg.get()))
+fun CommandSender.sendConfigMessage(msg: ConfigMessage, vararg placeholders: Pair<String, String>) {
+    var mess = msg.get()
+    for ((key, value) in placeholders) mess = mess.replace(key, value)
+    sendMessage(ChatUtil.format(mess))
+}
+
 class KoChat : JavaPlugin() {
 
     override fun onEnable() {
