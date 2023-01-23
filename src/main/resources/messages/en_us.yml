@@ -12,3 +12,4 @@ removed_word: "&aThe word %word% was successfully removed from the swearing list
 word_already_added: "&cThis word already exists in the swearing list!"
 word_not_found: "&cThe word %word% was not found in the swearing list!"
 no_words: "&cNo words were found!"
+list_of_words: "&6Swearing list:"

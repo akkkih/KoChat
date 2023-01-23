@@ -1,7 +1,7 @@
 package me.akkih.kochat.commands.utils
 
-import me.akkih.kochat.config.ConfigManager
 import me.akkih.kochat.config.enums.ConfigMessage
+import me.akkih.kochat.sendConfigMessage
 import org.bukkit.command.CommandSender
 
 abstract class SubcommandManager {
@@ -11,7 +11,7 @@ abstract class SubcommandManager {
             execute(sender, args)
             true
         } else {
-            sender.sendMessage(ConfigManager.getMessage(ConfigMessage.NO_PERMISSION_MESSAGE))
+            sender.sendConfigMessage(ConfigMessage.NO_PERMISSION_MESSAGE)
             false
         }
     }

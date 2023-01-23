@@ -12,3 +12,4 @@ removed_word: "&aA palavra %word% foi removida com sucesso da lista de palavrõe
 word_already_added: "&cEssa palavra já está na lista de palavrões!"
 word_not_found: "&cA palavrva %word% não foi encontrada na lista de palavrões!"
 no_words: "&cNenhuma palavra encontrada!"
+list_of_words: "&6Lista de palavrões:"
