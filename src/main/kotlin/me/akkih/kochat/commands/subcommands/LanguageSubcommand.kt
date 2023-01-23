@@ -6,6 +6,7 @@ import me.akkih.kochat.config.ConfigManager
 import me.akkih.kochat.config.enums.ConfigMessage
 import me.akkih.kochat.enums.Language
 import me.akkih.kochat.main
+import me.akkih.kochat.sendConfigMessage
 import me.akkih.kochat.utils.ChatUtil
 import org.bukkit.command.CommandSender
 
@@ -18,7 +19,7 @@ class LanguageSubcommand : SubcommandManager() {
             return
         }
         if (!Language.exists(args[1].uppercase())) {
-            sender.sendMessage(ChatUtil.format(ConfigManager.getMessage(ConfigMessage.LANGUAGE_NOT_FOUND)))
+            sender.sendConfigMessage(ConfigMessage.LANGUAGE_NOT_FOUND)
             return
         }
 

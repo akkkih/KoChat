@@ -4,16 +4,20 @@ import com.fasterxml.jackson.core.JsonProcessingException
 import com.fasterxml.jackson.databind.JsonNode
 import com.fasterxml.jackson.databind.ObjectMapper
 import me.akkih.kochat.commands.BaseCommand
+import me.akkih.kochat.config.enums.ConfigMessage
 import me.akkih.kochat.listeners.MessageListener
 import me.akkih.kochat.listeners.PlayerListener
+import me.akkih.kochat.utils.ChatUtil
 import me.akkih.kochat.utils.JsonUtil
 import org.bukkit.Bukkit
+import org.bukkit.command.CommandSender
 import org.bukkit.plugin.java.JavaPlugin
 import java.io.File
 
 internal var isPluginUpdated = true
 lateinit var main: KoChat
 
+fun CommandSender.sendConfigMessage(msg: ConfigMessage) = sendMessage(ChatUtil.format(msg.get()))
 class KoChat : JavaPlugin() {
 
     override fun onEnable() {

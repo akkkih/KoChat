@@ -1,5 +1,7 @@
 package me.akkih.kochat.config.enums
 
+import me.akkih.kochat.config.ConfigManager
+
 enum class ConfigMessage {
 
     NO_PERMISSION_MESSAGE,
@@ -13,6 +15,7 @@ enum class ConfigMessage {
     REMOVED_WORD,
     WORD_ALREADY_ADDED,
     WORD_NOT_FOUND,
-    NO_WORDS,
+    NO_WORDS;
 
+    fun get() = ConfigManager.getMessage(this)
 }
