@@ -17,11 +17,11 @@ import java.io.File
 internal var isPluginUpdated = true
 lateinit var main: KoChat
 
-fun CommandSender.sendConfigMessage(msg: ConfigMessage) = sendMessage(ChatUtil.format(msg.get()))
-fun CommandSender.sendConfigMessage(msg: ConfigMessage, vararg placeholders: Pair<String, String>) {
-    var mess = msg.get()
-    for ((key, value) in placeholders) mess = mess.replace(key, value)
-    sendMessage(ChatUtil.format(mess))
+fun CommandSender.sendConfigMessage(message: ConfigMessage) = sendMessage(ChatUtil.format(message.get()))
+fun CommandSender.sendConfigMessage(configMessage: ConfigMessage, vararg placeholders: Pair<String, String>) {
+    var message = configMessage.get()
+    for ((key, value) in placeholders) message = message.replace(key, value)
+    sendMessage(ChatUtil.format(message))
 }
 
 class KoChat : JavaPlugin() {

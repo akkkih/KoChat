@@ -9,6 +9,7 @@ version = '1.0'
 
 repositories {
     mavenCentral()
+    jcenter()
     maven {
         name = 'papermc-repo'
         url = 'https://repo.papermc.io/repository/maven-public/'
@@ -24,7 +25,6 @@ dependencies {
     implementation 'org.jetbrains.kotlin:kotlin-stdlib-jdk8'
 
     implementation 'com.squareup.okhttp3:okhttp:3.4.1'
-
     implementation 'com.fasterxml.jackson.core:jackson-databind:2.14.1'
 }
 
@@ -61,4 +61,13 @@ compileTestKotlin {
     kotlinOptions {
         jvmTarget = "17"
     }
+}
+
+shadowJar {
+    minimize()
+
+    // Output will be KoChat.jar
+    archiveBaseName.set('KoChat')
+    archiveClassifier.set('')
+    archiveVersion.set('')
 }

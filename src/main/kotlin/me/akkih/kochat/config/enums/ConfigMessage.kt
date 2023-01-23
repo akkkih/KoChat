@@ -15,7 +15,9 @@ enum class ConfigMessage {
     REMOVED_WORD,
     WORD_ALREADY_ADDED,
     WORD_NOT_FOUND,
-    NO_WORDS;
+    NO_WORDS,
+    LIST_OF_WORDS;
 
     fun get() = ConfigManager.getMessage(this)
+
 }
