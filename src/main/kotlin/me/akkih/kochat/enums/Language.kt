@@ -1,4 +1,4 @@
-package me.akkih.kochat.commands.enums
+package me.akkih.kochat.enums
 
 enum class Language {
 

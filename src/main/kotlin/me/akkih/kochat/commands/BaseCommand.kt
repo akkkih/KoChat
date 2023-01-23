@@ -6,7 +6,7 @@ import me.akkih.kochat.commands.subcommands.LanguageSubcommand
 import me.akkih.kochat.commands.subcommands.ReloadSubcommand
 import me.akkih.kochat.commands.utils.CommandManager
 import me.akkih.kochat.commands.utils.SubcommandEnum
-import me.akkih.kochat.commands.enums.Language
+import me.akkih.kochat.enums.Language
 import me.akkih.kochat.main
 import org.bukkit.command.CommandSender
 import org.bukkit.util.StringUtil
