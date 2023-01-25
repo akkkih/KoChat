@@ -26,9 +26,9 @@ object JsonUtil {
                 .build()
 
             client.newCall(request).execute().use {
-                val status = it.code()
+                val status = it.code
 
-                if (status == 200) return it.body().string()
+                if (status == 200) return it.body?.string()
             }
         } catch (error: Exception) {
             error.printStackTrace()

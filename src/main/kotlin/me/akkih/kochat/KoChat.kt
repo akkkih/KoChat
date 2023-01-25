@@ -43,6 +43,7 @@ class KoChat : JavaPlugin() {
         if (!dataFolder.exists()) dataFolder.mkdir()
         saveDefaultConfig()
 
+        saveResource("messages${File.separator}de_de.yml", false)
         saveResource("messages${File.separator}en_us.yml", false)
         saveResource("messages${File.separator}pt_br.yml", false)
     }

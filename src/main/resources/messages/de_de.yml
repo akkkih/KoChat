@@ -1,0 +1,15 @@
+no_permission_message: "&cDazu bist du nicht berechtigt!"
+invalid_usage: "&cFehlerhafte Eingabe! Versuche: %usage%."
+join_message: "&e%player% hat das Spiel betreten!"
+quit_message: "&e%player% hat das Spiel verlassen..."
+successful_reload: "&aPlugin erfolgreich neu geladen!"
+
+language_not_found: "&cDiese Sprache wurde nicht gefunden!"
+language_changed_successfully: "&aSprache erfolgreich geändert!"
+
+added_word: "&aDas Wort %word% wurde erfolgreich zur Liste hinzugefügt!"
+removed_word: "&aDas Wort %word% wurde erfolgreich von der Liste entfernt!"
+word_already_added: "&cDieses Wort existiert bereits in der Liste!"
+word_not_found: "&cDas Wort %word% wurde nicht in der Liste gefunden!"
+no_words: "&cEs wurden keine Wörter gefunden!"
+list_of_words: "&6Trageliste:"

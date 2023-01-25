@@ -19,7 +19,7 @@ class MessageListener : Listener {
 
         for (player in Bukkit.getOnlinePlayers()) {
             player.sendMessage(ChatUtil.format(messageFormat
-                .replace("%player%", event.player.name)
+                .replace("%player%", event.player.displayName)
                 .replace("%message%", filteredMessage)
             ))
         }

@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="/resources/images/banner.png" alt="Plugin Banner" width=640 /><br><br>
+  <img src="https://raw.githubusercontent.com/KoPlugins/KoChat/main/resources/images/banner.png" alt="Plugin Banner" width=640 /><br><br>
   <strong>KoChat</strong> is a lightweight, simple and customizable chat system for your Minecraft server.
 </p>
 

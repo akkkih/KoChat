@@ -2,6 +2,7 @@ package me.akkih.kochat.enums
 
 enum class Language {
 
+    DE_DE,
     EN_US,
     PT_BR;
 
