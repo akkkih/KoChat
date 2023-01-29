@@ -4,6 +4,8 @@ enum class Language {
 
     DE_DE,
     EN_US,
+    ES_ES,
+    FR_FR,
     PT_BR;
 
     companion object {

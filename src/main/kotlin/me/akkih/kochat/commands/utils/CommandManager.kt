@@ -12,7 +12,7 @@ abstract class CommandManager(
     command: String,
     aliases: Array<String>,
     description: String,
-    permission: String
+    permission: String?
 ) : BukkitCommand(command) {
 
     init {

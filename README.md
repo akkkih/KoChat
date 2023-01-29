@@ -15,6 +15,8 @@
 - `kochat.commands.reload`: Permission to execute /kochat reload
 - `kochat.commands.language`: Permission to execute /kochat language
 - `kochat.commands.words`: Permission to execute /kochat words
+- `kochat.commands.togglechat`: Permission to execute /kochat togglechat
+- `kochat.bypass_muted_chat`: Permission to talk if the chat is disabled
 
 ## Translations
 If you would like to help me translate the plugin, join our [Crowdin](https://crowdin.com/project/koplugins)!

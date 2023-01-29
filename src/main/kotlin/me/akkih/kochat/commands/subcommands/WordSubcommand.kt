@@ -36,6 +36,7 @@ class WordSubcommand : SubcommandManager() {
                 ConfigManager.reloadAll()
                 sender.sendConfigMessage(ADDED_WORD, "%word%" to args[2])
             }
+
             "remove" -> {
                 if (args.size != 3) {
                     sender.sendConfigMessage(INVALID_USAGE, "%usage%" to WORDS.commandUsage)
@@ -53,6 +54,7 @@ class WordSubcommand : SubcommandManager() {
 
                 sender.sendConfigMessage(REMOVED_WORD, "%word%" to args[2])
             }
+
             "list" -> {
                 sender.sendMessage(ChatUtil.format("&8----------------------- &7[&6&lKC&7]&8 -----------------------"))
                 sender.sendConfigMessage(LIST_OF_WORDS)
@@ -64,6 +66,7 @@ class WordSubcommand : SubcommandManager() {
                 if (swearList.isEmpty()) sender.sendConfigMessage(NO_WORDS)
                 sender.sendMessage(ChatUtil.format("&8---------------------------------------------------"))
             }
+
             else -> {
                 sender.sendConfigMessage(INVALID_USAGE, "%usage%" to WORDS.commandUsage)
             }

@@ -10,5 +10,6 @@ enum class SubcommandEnum(
     RELOAD("Reload", "/kochat reload", "kochat.commands.reload"),
     LANGUAGE("Language", "/kochat language <lang>", "kochat.commands.language"),
     WORDS("Words", "/kochat words <add|remove|list> <word>", "kochat.commands.words"),
+    TOGGLECHAT("ToggleChat", "/kochat togglechat", "kochat.commands.togglechat")
 
 }

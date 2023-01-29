@@ -1,9 +1,6 @@
 package me.akkih.kochat.commands
 
-import me.akkih.kochat.commands.subcommands.WordSubcommand
-import me.akkih.kochat.commands.subcommands.HelpSubcommand
-import me.akkih.kochat.commands.subcommands.LanguageSubcommand
-import me.akkih.kochat.commands.subcommands.ReloadSubcommand
+import me.akkih.kochat.commands.subcommands.*
 import me.akkih.kochat.commands.utils.CommandManager
 import me.akkih.kochat.commands.utils.SubcommandEnum
 import me.akkih.kochat.commands.utils.SubcommandEnum.*
@@ -11,7 +8,7 @@ import me.akkih.kochat.enums.Language
 import me.akkih.kochat.main
 import org.bukkit.command.CommandSender
 import org.bukkit.util.StringUtil
-import java.util.Arrays
+import java.util.*
 
 class BaseCommand : CommandManager(
     "kochat",
@@ -24,6 +21,7 @@ class BaseCommand : CommandManager(
     private val reloadSubcommand = ReloadSubcommand()
     private val languageSubcommand = LanguageSubcommand()
     private val wordSubcommand = WordSubcommand()
+    private val toggleChatSubcommand = ToggleChatSubcommand()
 
     override fun execute(sender: CommandSender, args: Array<String>) {
         if (args.isEmpty()) {
@@ -34,6 +32,7 @@ class BaseCommand : CommandManager(
                 "reload" -> reloadSubcommand.execute(sender, args, RELOAD)
                 "language" -> languageSubcommand.execute(sender, args, LANGUAGE)
                 "words" -> wordSubcommand.execute(sender, args, WORDS)
+                "togglechat" -> toggleChatSubcommand.execute(sender, args, TOGGLECHAT)
                 else -> helpSubcommand.execute(sender, args, HELP)
             }
         }
@@ -41,12 +40,21 @@ class BaseCommand : CommandManager(
 
     override fun onTabComplete(sender: CommandSender, args: Array<String>): MutableList<String> {
         if (args.size == 1) {
-            return StringUtil.copyPartialMatches(args[0], Arrays.stream(SubcommandEnum.values()).map { it.command.lowercase() }.toList(), ArrayList())
+            return StringUtil.copyPartialMatches(
+                args[0],
+                Arrays.stream(SubcommandEnum.values()).map { it.command.lowercase() }.toList(),
+                ArrayList()
+            )
         }
 
         if (args.size == 2) {
             return when (args[0].lowercase()) {
-                "language" -> StringUtil.copyPartialMatches(args[1], Arrays.stream(Language.values()).map { it.name.lowercase() }.toList(), ArrayList())
+                "language" -> StringUtil.copyPartialMatches(
+                    args[1],
+                    Arrays.stream(Language.values()).map { it.name.lowercase() }.toList(),
+                    ArrayList()
+                )
+
                 "words" -> StringUtil.copyPartialMatches(args[1], listOf("add", "remove", "list"), ArrayList())
                 else -> mutableListOf()
             }

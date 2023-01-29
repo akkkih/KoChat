@@ -1,5 +1,15 @@
 no_permission_message: "&cVocê não pode fazer isso!"
 invalid_usage: "&cUso inválido! Use %usage%."
+no_console: "&cSomente jogadores podem usar esse comando!"
+
+player_not_online: "&cEsse jogador não está online!"
+received_message: "&8Mensagem de %player%: &6%message%"
+sent_message: "&8Mensagem para %player%: &6%message%"
+did_not_message_anyone: "&cVocê não conversou com ninguém!"
+chat_was_disabled: "&cO chat foi desativado por %player%!"
+chat_was_enabled: "&aO chat foi ativado por %player%!"
+chat_is_disabled: "&cO chat está desativado!"
+
 join_message: "&e%player% acabou de entrar no jogo!"
 quit_message: "&e%player% acabou de sair do jogo..."
 successful_reload: "&aPlugin recarregado com sucesso!"

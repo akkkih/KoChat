@@ -1,0 +1,25 @@
+no_permission_message: "&c¡No puedes hacer eso!"
+invalid_usage: "&c¡Uso no válido! Usa %usage%."
+no_console: "&cEste comando sólo está disponible para los jugadores."
+
+player_not_online: "&c¡Este jugador no está en línea!"
+received_message: "&8Mensaje de %player%: &6%message%"
+sent_message: "&8Mensaje para %player%: &6%message%"
+did_not_message_anyone: "&c¡No le enviaste un mensaje a nadie!"
+chat_was_disabled: "&c¡El chat fue deshabilitado por %player%!"
+chat_was_enabled: "&a¡El chat fue habilitado por %player%!"
+chat_is_disabled: "&c¡El chat está deshabilitado!"
+
+join_message: "&e¡%player% acaba de unirse al juego!"
+quit_message: "&e%player%  acaba de salir del juego..."
+successful_reload: "&a¡Plugin recargado con éxito!"
+
+language_not_found: "&c¡No se ha encontrado este idioma!"
+language_changed_successfully: "&a¡Cambiado de idioma con éxito!"
+
+added_word: "&a¡La palabra %word% ha sido añadida con éxito a la lista de palabrotas!"
+removed_word: "&a¡La palabra %word% ha sido eliminada con éxito a la lista de palabrotas!"
+word_already_added: "&c¡Esta palabra ya existe en la lista de palabrotas!"
+word_not_found: "&c¡La palabra %palabra% no se encontró en la lista de palabrotas!"
+no_words: "&c¡No se han encontrado palabras!"
+list_of_words: "&6Lista de palabrotas:"

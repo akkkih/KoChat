@@ -1,0 +1,25 @@
+no_permission_message: "&cVous ne pouvez pas faire ça !"
+invalid_usage: "&cUtilisation invalide ! Usage : %usage%."
+no_console: "&cCette commande n'est disponible que pour les joueurs !"
+
+player_not_online: "&cCe joueur n'est pas en ligne !"
+received_message: "&8Message de %player%: &6%message%"
+sent_message: "&8Message à %player%: &6%message%"
+did_not_message_anyone: "&cVous n'avez envoyé de message à personne !"
+chat_was_disabled: "&cLe chat a été désactivé par %player% !"
+chat_was_enabled: "&aLe chat a été activé par %player% !"
+chat_is_disabled: "&cLe chat est désactivé !"
+
+join_message: "&e%player% vient de rejoindre le serveur !"
+quit_message: "&e%player% vient de quitter le serveur ..."
+successful_reload: "&aPlugin rechargé avec succès !"
+
+language_not_found: "&cCette langue n’a pas été trouvée !"
+language_changed_successfully: "&aChangement de langue effectuée avec succès !"
+
+added_word: "&aLe mot %word% vient d’être ajouté à la liste avec succès !"
+removed_word: "&aLe mot %word% vient d’être retiré de la liste avec succès !"
+word_already_added: "&cCe mot existe déjà dans la liste !"
+word_not_found: "&cLe mot %word% n’existe pas dans la liste !"
+no_words: "&cAucun mot n’a été trouvé !"
+list_of_words: "&6Liste de serment :"

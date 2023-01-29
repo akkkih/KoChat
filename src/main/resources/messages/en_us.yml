@@ -1,5 +1,15 @@
 no_permission_message: "&cYou can't do that!"
 invalid_usage: "&cInvalid usage! Use %usage%."
+no_console: "&cThis command is only available for players!"
+
+player_not_online: "&cThis player is not online!"
+received_message: "&8Message from %player%: &6%message%"
+sent_message: "&8Message to %player%: &6%message%"
+did_not_message_anyone: "&cYou didn't message anyone!"
+chat_was_disabled: "&cThe chat was disabled by %player%!"
+chat_was_enabled: "&aThe chat was enabled by %player%!"
+chat_is_disabled: "&cThe chat is disabled!"
+
 join_message: "&e%player% just joined the game!"
 quit_message: "&e%player% just left the game..."
 successful_reload: "&aSuccessfully reloaded plugin!"
