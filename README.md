@@ -6,8 +6,10 @@
 ## Features
 - Fully customizable messages and chat format
 - Fully customizable chat profanity filter (replaces the banned word with asterisks)
+- Private message system: talk to your friends in style using color codes!
 - Quick and easy to install: just drag and drop the JAR into the plugins folder!
-- Supports color code messages: use `&` to use colors
+- Supports color code messages: use **&** to use colors
+- Is something wrong with the chat? You can disable/enable it whenever you want!
 
 ## Permissions
 - `kochat.primarycommand`: Permission to execute /kochat
