@@ -51,7 +51,6 @@ class MessageCommand : CommandManager(
             Pair("%message%", message.toString())
         )
 
-        // Adding target to HashMap
         main.getRecentMessages()[sender.uniqueId] = target.uniqueId
     }
 
