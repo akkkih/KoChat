@@ -52,6 +52,9 @@ class KoChat : JavaPlugin() {
         saveResource("messages${File.separator}es_es.yml", false)
         saveResource("messages${File.separator}fr_fr.yml", false)
         saveResource("messages${File.separator}pt_br.yml", false)
+        saveResource("messages${File.separator}ru_ru.yml", false)
+
+        logger.info("Languages saved.")
     }
 
     private fun checkIsPluginUpdated() {

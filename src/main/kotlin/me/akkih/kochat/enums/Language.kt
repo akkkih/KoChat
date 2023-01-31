@@ -6,7 +6,8 @@ enum class Language {
     EN_US,
     ES_ES,
     FR_FR,
-    PT_BR;
+    PT_BR,
+    RU_RU;
 
     companion object {
         private val languages = Language.values().map { it.toString() }
