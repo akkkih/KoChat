@@ -24,7 +24,7 @@ dependencies {
     compileOnly 'org.spigotmc:spigot-api:1.19-R0.1-SNAPSHOT'
     implementation 'org.jetbrains.kotlin:kotlin-stdlib-jdk8'
 
-    implementation 'com.squareup.okhttp3:okhttp:4.10.0'
+    implementation 'com.squareup.okhttp3:okhttp:4.11.0'
     implementation 'com.fasterxml.jackson.core:jackson-databind:2.14.2'
 }
 
