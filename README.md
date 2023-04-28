@@ -1,6 +1,7 @@
 <p align="center">
   <img src="https://raw.githubusercontent.com/KoPlugins/KoChat/main/resources/images/banner.png" alt="Plugin Banner" width=640 /><br><br>
-  <strong>KoChat</strong> is a lightweight, simple and customizable chat system for your Minecraft server.
+  <strong>KoChat</strong> is a lightweight, simple and customizable chat system for your Minecraft server. <br>
+  <strong>We have decided to discontinue updates for this project. We want to express our gratitude for your support throughout its development.</strong>
 </p>
 
 ## Features
