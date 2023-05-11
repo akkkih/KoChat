@@ -25,7 +25,6 @@
 If you would like to help me translate the plugin, join our [Crowdin](https://crowdin.com/project/koplugins)!
 
 ## Links
-- [Discord Support Server](https://discord.gg/k4MpVVYdFE)
 - [Spigot Page](https://www.spigotmc.org/resources/kochat.107564/) (also check: [Polymart](https://polymart.org/resource/kochat.3415))
 - [Contributors](/CONTRIBUTORS.md)
 - [License](/LICENSE)
